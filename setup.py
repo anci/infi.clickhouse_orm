@@ -2,11 +2,10 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals, print_function
 
-from setuptools import setup
+from setuptools import setup, find_packages
 
 
 setup(name='infi.clickhouse_orm',
-    version='0.9.2',
-    url='https://github.com/anci/infi.clickhouse_orm',
-    packages=['src'],
+    version='0.9.7',
+    packages=find_packages('src'),
     zip_safe=False)
