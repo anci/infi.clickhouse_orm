@@ -9,7 +9,6 @@ if __name__ == '__main__':
     SETUP_INFO = dict(
         name='infi.clickhouse_orm',
         version='0.9.7',
-        license='BSD',
         install_requires=[
             'pytz',
 	        'requests',
@@ -18,7 +17,7 @@ if __name__ == '__main__':
 	    ],
         namespace_packages=['infi'],
         package_dir={'': 'src'},
-        package_data={'': []},
+        #package_data={'': []},
         include_package_data=True,
         zip_safe=False,
         entry_points = dict(
