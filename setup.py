@@ -6,7 +6,7 @@ from setuptools import setup, find_packages
 if __name__ == '__main__':
     SETUP_INFO = dict(
         name='infi.clickhouse_orm',
-        version='0.9.7.1',
+        version='0.9.7.2',
         install_requires=[
             'pytz',
 	        'requests',

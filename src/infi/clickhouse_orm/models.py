@@ -109,7 +109,10 @@ class Model(with_metaclass(ModelBase)):
         for name, value in kwargs.items():
             field = self.get_field(name)
             if field:
-                setattr(self, name, value)
+                try:
+                    setattr(self, name, value)
+                except ValueError as e:
+                    raise ValueError("{}: {}", name, e)
             else:
                 raise AttributeError('%s does not have a field called %s' % (self.__class__.__name__, name))
         # Assign default values for fields not included in the keyword arguments
